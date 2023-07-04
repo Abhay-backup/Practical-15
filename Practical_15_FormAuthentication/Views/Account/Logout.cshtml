@@ -1,0 +1,13 @@
+﻿
+@{
+	ViewBag.Title = "Logout";
+}
+
+<h2>Logout</h2>
+
+<div><span class="text-danger"> @ViewBag.User </span> is Logged Out</div>
+
+<div class="mt-3">
+	@*@Html.ActionLink("Home", "Index", "Home", string.Empty, new { @class = "btn btn-outline-Primary" })*@
+	@Html.ActionLink("Login To another User", "Login", "Account", string.Empty, new { @class = "btn btn-outline-success" })
+</div>
